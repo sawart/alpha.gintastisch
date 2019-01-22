@@ -201,6 +201,26 @@ video::-webkit-media-controls {
 			}
 		}
 		
+		.path {
+		  	stroke-dasharray: 3500;
+			stroke-dashoffset: 1000;
+			animation: dash 5s linear forwards;
+			fill: none;
+			stroke: #000;
+			stroke-width: 2.75px;
+		  	transform: scale(.08);
+		}
+
+		@keyframes dash {
+		  from {
+			stroke-dashoffset: 3500;
+		  }
+			to {
+			stroke-dashoffset: 0;
+		  }
+
+		}
+		
 		.introText {
 			padding: 6em 0 0 2em;
 			

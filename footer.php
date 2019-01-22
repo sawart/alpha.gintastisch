@@ -37,5 +37,26 @@
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="js/main.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			  $('.owl-carousel').owlCarousel({
+					loop:true,
+					margin:10,
+					nav:true,
+					responsive:{
+						0:{
+							items:1
+						},
+						575:{
+							items:3
+						},
+						1000:{
+							items:5
+						}
+					}
+				})
+			});
+		</script>
 </body>
 </html>

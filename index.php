@@ -3,7 +3,9 @@
 		<div class="intro">
 			<div class="bottle">
 			<!--	<img src="img/personalisierter-gin.png" alt="personalisierte Gin Flasche"> -->
-			<div class="ginAnimation"></div>
+			<div class="">
+				<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 526.75 1349.16"><path class="path" d="M266.5,33.5s-94,1-102,4-9,9-9,9v88h7a16.7,16.7,0,0,0-3,9c0,5-1,66-1,66s4,8,6,8l-3,171s4,5-27,23-108,59-120,94c0,0-7,4-7,58s-5,677-5,677,31,85,85,113,135,28,135,28,132,5,203-20,103-123,103-123l-4-721s-27-79-137-119c0,0-14,0-15-14s-5-168-5-168l7-7-3-71-3-4h9l-1-86s1-11-18-12S266.5,33.5,266.5,33.5Z" transform="translate(-2.12 -33.12)"/></svg>
+				</div>
 			</div>
 			<div class="introTextWrapper">
 				<div class="introText">
