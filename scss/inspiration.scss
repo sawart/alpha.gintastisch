@@ -1,0 +1,136 @@
+.inspiration {
+	@include flex;
+	flex-flow: row wrap;
+	margin-top: 7em;
+	
+	.leftCol, .rightCol {
+		width: 50%;
+	}
+	
+	.leftCol {
+		@include flex;
+		justify-content: center;
+		align-items: center;
+		
+		img {
+			max-width: 50%;
+		}
+		
+		&:before {
+			content: "";
+			float: left;
+			padding-top: 100%;
+		}
+	}
+	
+	.rightCol {
+			@include flex;
+			flex-flow: row wrap;
+		
+		.square {
+			@include flex;
+			justify-content: center;
+			flex-direction: column;
+			flex: 1 0 50%;
+			min-height: 320px;
+					
+			&:after {
+				content: "";
+				display: block;
+			}
+		}
+		
+		.gray, .red {
+			box-sizing: border-box;
+			padding: 2em;
+			color: $white;
+			min-width: 320px;
+			
+			h3 {
+				color: $white;
+			}
+		}
+		
+		.gray {
+			background: $mainColor;
+		}
+
+		.red {
+			background: $secColor;
+		}
+	}
+	
+	.square .customerName {
+		font-size: .7em;
+		font-weight: bold;
+	}
+}
+
+.inspirationImgGrid {
+	@include flex;
+	flex-flow: row wrap;
+	height: auto;
+	
+	.col40, .col60, .col75, .col25 {
+		&:before {
+			content: "";
+			float: left;
+			padding-top: 100%;
+		}
+	}
+	
+	.col40 {
+		width: 40%;
+	}
+	
+	.col60 {
+		width: 60%;
+	}
+	
+	.col75 {
+		width: 75%;
+	}
+	
+	.col25{
+		width: 25%;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.inspiration, .inspirationImgGrid {
+		flex-flow: column nowrap;
+		
+		.leftCol, .rightCol {
+			width: 100%;
+		}
+		
+		.rightCol .square {
+			min-height: 450px;
+		}
+		
+		.leftCol img {
+			width: 30%;
+		}
+		
+		.rightCol  {
+			order: 1;
+		}
+		
+		.leftCol {
+			order: 2;
+		}
+		
+		.col40, .col60, .col75, .col25 {
+			width: 100%;
+			margin-top: .5em;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.inspiration .leftCol img {
+		width: 50%;
+	}
+}
+

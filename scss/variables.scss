@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,700|Work+Sans:400,700');
+
+$mainColor: #565656; /* gray */
+$secColor: #8A101B; /* red */
+$white: #FFF; 
+$gray: #F2F2F2;
+
+@mixin headline($weight) {
+	font-family: 'Poppins', sans-serif;
+	font-weight: $weight;
+	text-transform: uppercase;
+}
+
+@mixin ft {
+	font-family: 'Work Sans', sans-serif;
+}
+
+@mixin flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
